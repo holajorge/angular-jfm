@@ -12,4 +12,8 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  ingresar(proveedor: string){
+    console.log(proveedor);
+  }
+
 }
