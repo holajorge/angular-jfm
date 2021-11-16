@@ -11,13 +11,13 @@ function store(name, val) {
       e.preventDefault();
         var currentStyle = $(this).attr('data-theme');
         store('theme', currentStyle);
-        $('#theme').attr({href: 'css/colors/'+currentStyle+'.css'})
+        $('#theme').attr({href: 'css/color/'+currentStyle+'.css'})
     });
 
     var currentTheme = get('theme');
     if(currentTheme)
     {
-      $('#theme').attr({href: 'css/colors/'+currentTheme+'.css'});
+      $('#theme').attr({href: 'css/color/'+currentTheme+'.css'});
     }
     // color selector
     $('#themecolors').on('click', 'a', function(){
@@ -35,13 +35,13 @@ $(document).ready(function(){
       e.preventDefault();
         var currentStyle = $(this).attr('data-theme');
         store('theme', currentStyle);
-        $('#theme').attr({href: 'css/colors/'+currentStyle+'.css'})
+        $('#theme').attr({href: 'css/color/'+currentStyle+'.css'})
     });
 
     var currentTheme = get('theme');
     if(currentTheme)
     {
-      $('#theme').attr({href: 'css/colors/'+currentTheme+'.css'});
+      $('#theme').attr({href: 'css/color/'+currentTheme+'.css'});
     }
     // color selector
 $('#themecolors').on('click', 'a', function(){
