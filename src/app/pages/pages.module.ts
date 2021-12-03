@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from '../app-routing.module';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 // modulos
 import { SharedModule } from '../shared/shared.module';
@@ -14,6 +15,8 @@ import { ProgressComponent } from './progress/progress.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { PromesaComponent } from './promesa/promesa.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
+import { PerfilComponent } from './perfil/perfil.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 // npm install chart.js@2.9.3 --save
 // npm install ng2-charts@2.2.3 --save
 @NgModule({
@@ -26,6 +29,7 @@ import { RxjsComponent } from './rxjs/rxjs.component';
     AccountSettingsComponent,
     PromesaComponent,
     RxjsComponent,
+    PerfilComponent,
 
   ],
   exports: [
@@ -39,7 +43,10 @@ import { RxjsComponent } from './rxjs/rxjs.component';
   ],
   imports: [
     CommonModule, 
+    FormsModule,
+    ReactiveFormsModule,
     SharedModule, 
+    BrowserAnimationsModule,
     AppRoutingModule,
     ComponentsModule,
     

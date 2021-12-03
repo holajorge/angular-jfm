@@ -1,6 +1,8 @@
+import { environment } from "src/environments/environment";
+const base_url = environment.base_url;
 
 export class Usuario{
-
+    
     constructor(
         public nombre :string, 
         public email:string, 
@@ -9,7 +11,18 @@ export class Usuario{
         public role?:string, 
         public google?:boolean, 
         public user_id?:string
-    ){
+    ){}
+
+    get imgProfile(){
+
+        if(this.img?.includes('https')){
+            return this.img;
+        }
+        
+        if(this.img){
+            return `${base_url}/upload/usuarios/${this.img}`;
+        }
+        return `${base_url}/upload/usuarios/default`;
         
     }
 }
