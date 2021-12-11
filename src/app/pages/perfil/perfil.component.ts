@@ -72,8 +72,7 @@ export class PerfilComponent implements OnInit {
   }
 
   subirImagen(){
-      this.fileUploadService
-        .actualizarFoto(this.imagenSubir, 'usuarios', this.usuario?.user_id || '')
+      this.fileUploadService.actualizarFoto(this.imagenSubir, 'usuarios', this.usuario?.user_id || '')
         .then( (imgn:any)  => {       
           Swal.fire('Guardado', 'Cambios fueron guardados', 'success');
           this.usuario.img = imgn;          

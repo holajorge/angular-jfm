@@ -17,6 +17,7 @@ import { PromesaComponent } from './promesa/promesa.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UsuariosComponent } from './mantenimientos/usuarios/usuarios.component';
 // npm install chart.js@2.9.3 --save
 // npm install ng2-charts@2.2.3 --save
 @NgModule({
@@ -30,6 +31,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     PromesaComponent,
     RxjsComponent,
     PerfilComponent,
+    UsuariosComponent,
 
   ],
   exports: [

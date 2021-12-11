@@ -20,3 +20,28 @@
     height: 200px;
     width: 200px;
 }
+.w100{
+    width: 100px;
+}
+.w40{
+    width: 140px;
+}
+.avatar{
+    border: 1px solid gray;
+    border-radius: 100%;
+    width: 50%;
+    
+}
+
+.fondo-modal-image{
+    background-color: rgba(0, 0, 0, 0.548);
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    z-index: 9999;
+}
+.oculto{
+    display: none;
+}

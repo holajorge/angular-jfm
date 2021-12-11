@@ -10,19 +10,20 @@ export class Usuario{
         public img?:string, 
         public role?:string, 
         public google?:boolean, 
-        public user_id?:string
+        public usuario_id?:string
     ){}
 
     get imgProfile(){
-
-        if(this.img?.includes('https')){
-            return this.img;
-        }
         
-        if(this.img){
+        if(!this.img){
+            return `${base_url}/upload/usuarios/default`;
+        }else if(this.img?.includes('https')){
+            return this.img;
+        }else if(this.img){
             return `${base_url}/upload/usuarios/${this.img}`;
+        }else{        
+            return `${base_url}/upload/usuarios/default`;
         }
-        return `${base_url}/upload/usuarios/default`;
         
     }
 }
